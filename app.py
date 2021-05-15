@@ -25,8 +25,8 @@ with col1:
     '''### Date'''
     date = st.date_input("",datetime.date(2015, 7, 6))
     '''### Pickup'''
-    pickup_longitude = st.number_input('Insert a pickup longitude', format='%f', value=-73.9798156)
-    pickup_latitude = st.number_input('Insert a pickup latitude', format='%f',value=40.7614327)
+    pickup_longitude = st.number_input('Insert a pickup longitude', format='%f', value=-73.98)
+    pickup_latitude = st.number_input('Insert a pickup latitude', format='%f',value=40.75)
     '''### Passengers'''
     passenger_count = st.slider('How many passengers?', 1, 6, 2)
 
@@ -34,8 +34,8 @@ with col2:
     '''### Time'''
     input_time = st.time_input('', datetime.time(17, 15))
     '''### Dropoff'''
-    dropoff_longitude = st.number_input('Insert a dropoff longitude', format='%f', value=-73.787408)
-    dropoff_latitude = st.number_input('Insert a dropoff latitude', format='%f', value=40.6431166)
+    dropoff_longitude = st.number_input('Insert a dropoff longitude', format='%f', value=-73.98)
+    dropoff_latitude = st.number_input('Insert a dropoff latitude', format='%f', value=40.75)
 
 with col3:
     df_tmp = get_map_data()
